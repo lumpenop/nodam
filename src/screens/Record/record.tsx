@@ -1,11 +1,12 @@
 import React from 'react';
 import {StyleSheet, View, Text} from 'react-native';
+import MainLayout from 'src/components/Layout/main.layout';
 
 const Record = () => {
   return (
-    <View>
+    <MainLayout title={'record'}>
       <Text>Record hi</Text>
-    </View>
+    </MainLayout>
   );
 };
 

@@ -1,11 +1,12 @@
 import React from 'react';
 import {StyleSheet, View, Text} from 'react-native';
+import MainLayout from 'src/components/Layout/main.layout';
 
 const MyPage = () => {
   return (
-    <View>
+    <MainLayout title={'my page'}>
       <Text>MyPage hi</Text>
-    </View>
+    </MainLayout>
   );
 };
 
