@@ -1,12 +1,27 @@
 import React from 'react';
-import {StyleSheet, View, Text} from 'react-native';
-import {SafeAreaView} from 'react-native-safe-area-context';
+import {StyleSheet, Text, View} from 'react-native';
+import Container from 'src/components/container';
+
+import MainLayout from 'src/components/Layout/main.layout';
 
 const Home = () => {
   return (
-    <SafeAreaView style={{flex: 1}} edges={['top']}>
-      <Text>Home hi</Text>
-    </SafeAreaView>
+    <MainLayout title={'home'}>
+      <View
+        style={{
+          backgroundColor: '#bcbcbc',
+          padding: 4,
+          borderRadius: 4,
+        }}>
+        <Text>나의 상태</Text>
+        <View>
+          <Text>hi</Text>
+        </View>
+      </View>
+      <Container title={'금연 기간'} subject={'65일'} />
+      <Container title={'절약한 금액'} subject={'65일'} />
+      <Container title={'늘어난 수명'} subject={'65일'} />
+    </MainLayout>
   );
 };
 
