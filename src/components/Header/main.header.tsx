@@ -11,9 +11,10 @@ const MainHeader: React.FC<Props> = ({title, icon}) => {
   return (
     <View
       style={{
-        height: 40,
         flexDirection: 'row',
         justifyContent: 'space-between',
+        paddingTop: 30,
+        paddingHorizontal: 20,
       }}>
       <Text style={{fontSize: size, fontWeight: 'bold'}}>{title}</Text>
       {icon && <ArrowLeft height={size} width={size} />}

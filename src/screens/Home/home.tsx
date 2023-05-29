@@ -6,21 +6,28 @@ import MainLayout from 'src/components/Layout/main.layout';
 
 const Home = () => {
   return (
-    <MainLayout title={'home'}>
+    <MainLayout>
       <View
         style={{
-          backgroundColor: '#bcbcbc',
-          padding: 4,
-          borderRadius: 4,
+          paddingTop: 30,
+          paddingHorizontal: 30,
+          gap: 30,
         }}>
-        <Text>나의 상태</Text>
-        <View>
-          <Text>hi</Text>
+        <View
+          style={{
+            backgroundColor: '#bcbcbc',
+            padding: 4,
+            borderRadius: 4,
+          }}>
+          <Text>나의 상태</Text>
+          <View>
+            <Text>hi</Text>
+          </View>
         </View>
+        <Container title={'금연 기간'} subject={'65일'} />
+        <Container title={'절약한 금액'} subject={'65일'} />
+        <Container title={'늘어난 수명'} subject={'65일'} />
       </View>
-      <Container title={'금연 기간'} subject={'65일'} />
-      <Container title={'절약한 금액'} subject={'65일'} />
-      <Container title={'늘어난 수명'} subject={'65일'} />
     </MainLayout>
   );
 };

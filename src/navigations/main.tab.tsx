@@ -1,6 +1,8 @@
 import {createMaterialBottomTabNavigator} from '@react-navigation/material-bottom-tabs';
 import React from 'react';
 import {StyleSheet, Text} from 'react-native';
+import HomeStack from 'src/navigations/home.stack';
+import RecordStack from 'src/navigations/record.stack';
 import Home from 'src/screens/Home/home';
 import MyPage from 'src/screens/MyPage/my.page';
 import Record from 'src/screens/Record/record';
@@ -19,7 +21,7 @@ const MainTab = () => {
       barStyle={{backgroundColor: 'tomato'}}>
       <Tab.Screen
         name={'HomeStack'}
-        component={Home}
+        component={HomeStack}
         options={{
           tabBarLabel: 'Home',
           tabBarIcon: ({color}) => <HomeIcon color={color} width={size} />,
@@ -27,7 +29,7 @@ const MainTab = () => {
       />
       <Tab.Screen
         name={'RecordStack'}
-        component={Record}
+        component={RecordStack}
         options={{
           tabBarLabel: 'Record',
           tabBarIcon: ({color}) => <CalendarIcon color={color} width={size} />,
