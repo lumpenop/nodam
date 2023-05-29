@@ -16,6 +16,7 @@ type HomeStackParamsType = {
 
 type RecordStackParamsType = {
   Record: undefined;
+  RecordWrite: undefined;
 };
 
 type MyPageStackParamsType = {
