@@ -16,8 +16,5 @@ const RootStack = () => {
   );
 };
 
-const styles = StyleSheet.create({
-  block: {},
-});
 
 export default RootStack;
